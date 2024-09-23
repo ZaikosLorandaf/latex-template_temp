@@ -1,0 +1,86 @@
+\documentclass[a4paper, 11pt]{article}
+
+\usepackage{document}
+\usepackage{titlepage}
+
+% Optional packages and tools (Uncomment to your needs)
+\usepackage{toolbox}
+
+
+% Image insertion template:
+%
+% \begin{figure}[h!]
+%     \centering
+%     \includegraphics[width=0.45\textwidth]{/path/to/image.jpg}
+%     \caption{Caption Text}
+%     \label{fig: A Relateble Name}
+% \end{figure}
+
+
+% To add a bibliography, first make sure that your file
+% is named "bibliography.bib" and then uncomment the
+% following line.
+%
+% \addbibresource{references.bib}
+
+
+% Comment to compile links and references...
+%\nofiles
+
+%~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~%
+%                           Title Page Parameters                            %
+%~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~%
+\institution{Université de Sherbrooke}
+\faculty{Faculté de génie}
+\department{Département de GEGIGRO}
+\title{Un titre prertinent}
+\class{Le nom du cour}
+\classnb{ABC123}
+\author{
+  \addtolength{\tabcolsep}{-0.4em}
+  \begin{tabular}{rcl} % Ajouter des auteurs au besoin
+    Ton Nom Ici      & -- & abcd1234
+    Ton Nom Ici      & -- & abcd1234
+  \end{tabular}
+}
+\teacher{
+  Teacher 1 \\
+  Teacher 2 \\
+  Teacher 3
+    }
+\location{Sherbrooke}
+\date{\today}
+
+%~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~%
+%                               Begin Document                               %
+%~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~%
+
+%% WARNING!!!
+% This template requires you to compile using xelatex or lualatex!
+
+
+
+\begin{document}
+\maketitle
+\pagenumbering{roman}
+\newpage
+
+\tableofcontents
+
+% \listoffigures
+% \addcontentsline{toc}{section}{\listfigurename} % Add location to ToC
+
+% \listoftables
+% \addcontentsline{toc}{section}{\listtablename}   % Add location to ToC
+
+\newpage
+\pagenumbering{arabic}
+
+\section{Un nom de section}
+
+\subsection{Un nom de sous section}
+
+
+% \newpage
+\printbibliography[]
+\end{document}
